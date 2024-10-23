@@ -1,0 +1,15 @@
+/* src/components/ServicesSection.css */
+.services-section {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.service {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    margin-top: 0;
+}

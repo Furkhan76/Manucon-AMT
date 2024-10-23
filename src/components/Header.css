@@ -1,0 +1,29 @@
+/* src/components/Header.css */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure vertical alignment of items */
+    padding: 20px;
+    background-color: #060606; /* Maroon background */
+}
+
+nav {
+    display: flex; /* Ensures that links are aligned horizontally */
+}
+
+nav a {
+    display: block; /* Makes links block elements */
+    padding: 10px 20px; /* Adds padding around the text */
+    margin-right: 10px; /* Space between each link */
+    text-decoration: none;
+    color: #fdfafa; /* Off-white color for text */
+    background-color: transparent; /* Transparent background initially */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Attractive, readable font */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+nav a:hover {
+    background-color: #ffd700; /* Light gold color background on hover */
+    color: #800000; /* Change text color to match the header on hover */
+    font-weight: bold; /* Makes text bold on hover */
+}

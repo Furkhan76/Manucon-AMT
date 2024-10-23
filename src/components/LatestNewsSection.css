@@ -1,0 +1,9 @@
+/* src/components/LatestNewsSection.css */
+.latest-news-section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.news-item {
+    margin-bottom: 15px;
+}

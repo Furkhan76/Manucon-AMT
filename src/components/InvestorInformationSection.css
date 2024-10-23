@@ -1,0 +1,6 @@
+/* src/components/InvestorInformationSection.css */
+.investor-information-section img {
+    width: 100%;
+    max-width: 600px; /* Adjust according to your layout */
+    margin-bottom: 10px;
+}

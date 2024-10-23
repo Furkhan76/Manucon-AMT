@@ -1,0 +1,11 @@
+/* src/components/GlobalReachSection.css */
+.global-reach-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.global-reach-section img {
+    width: 100%;
+    max-width: 600px; /* You can adjust based on your layout needs */
+    margin-bottom: 10px;
+}
