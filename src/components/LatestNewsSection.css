@@ -1,9 +1,66 @@
-/* src/components/LatestNewsSection.css */
 .latest-news-section {
     padding: 20px;
     background-color: #fff;
+    background-color: #f0f0f0;
+}
+
+.news-heading {
+    text-align: center; /* Center align the main heading */
+    font-size: 28px; /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex; /* Use flexbox to layout news items */
+    justify-content: space-between; /* Distribute space evenly */
 }
 
 .news-item {
-    margin-bottom: 15px;
+    flex: 1; /* Each item takes equal space */
+    margin: 0 10px; /* Margin between items */
+    text-align: center; /* Center align text */
+}
+
+.news-image {
+    max-width: 80%; /* Make images a bit smaller (adjust the percentage as needed) */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image horizontally */
+    border: 2px solid #e0e0e0; /* Light border around the image */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Fancy shadow effect */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.news-image:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.news-date {
+    color: black; /* Text color for the date */
+    font-weight: normal; /* Normal text weight */
+    font-size: 14px; /* Smaller font size for the date */
+    margin: 10px 0; /* Margin above and below the date */
+}
+
+.news-title {
+    color: black; /* Text color for the title */
+    font-weight: bold; /* Bold text */
+    margin-top: 10px; /* Space above title */
+    line-height: 1.4; /* Line height for readability */
+    font-size: 0.9rem; /* Adjusted font size */
+    max-width: 80%; /* Limit title width to match image width */
+    margin: 0 auto; /* Center align the title */
+}
+
+/* Added to ensure both text and image align well */
+.news-item {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align children */
+}
+
+.news-date, .news-title {
+    max-width: 80%; /* Ensure both date and title do not exceed image width */
+    text-align: center; /* Center align text */
 }

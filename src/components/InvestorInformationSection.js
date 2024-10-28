@@ -1,7 +1,7 @@
 // src/components/InvestorInformationSection.js
 import React from 'react';
 import './InvestorInformationSection.css';
-import investorImage from '../assests/investor-image.jpg'; // Assuming you have an image here
+import investorImage from '../assets/investor-image.jpg'; // Assuming you have an image here
 
 const InvestorInformationSection = () => {
     return (

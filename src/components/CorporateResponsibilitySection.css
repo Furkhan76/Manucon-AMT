@@ -1,9 +1,62 @@
 /* src/components/CorporateResponsibilitySection.css */
 .corporate-responsibility-section {
+    display: flex;
     padding: 20px;
     background-color: #f0f0f0;
 }
 
-.initiative {
-    margin-bottom: 15px;
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.image-container {
+    flex: 1; /* Adjusts the width of the image section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* To position the shadow block */
+}
+
+.responsibility-image {
+    max-width: 100%;
+    height: auto; /* This will keep the aspect ratio */
+    max-height: 300px; /* Set a max height for the image, increase as needed */
+    z-index: 1; /* Keep image above the shadow */
+}
+
+.image-shadow {
+    position: absolute;
+    background-color: black;
+    width: 100%; /* Full width of the image */
+}
+
+.top-shadow {
+    height: 3cm; /* Set the height of the top shadow block */
+    top: 0; /* Position at the top */
+}
+
+.bottom-shadow {
+    height: 3cm; /* Set the height of the bottom shadow block */
+    bottom: 0; /* Position at the bottom */
+}
+
+.text-container {
+    flex: 1; /* Adjusts the width of the text section */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.responsibility-heading {
+    font-weight: bold;
+    font-size: 24px; /* Adjust size as needed */
+    color: black;
+    margin-bottom: 10px;
+}
+
+.responsibility-text {
+    color: black; /* Set text color to black */
+    line-height: 1.5; /* Adjust line height for readability */
 }
