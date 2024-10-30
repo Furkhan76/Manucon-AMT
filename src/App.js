@@ -17,7 +17,7 @@ function App() {
       <ServicesSection />
       <GlobalReachSection />
       <CorporateResponsibilitySection />
-      <InvestorInformationSection />
+      <InvestorInformationSection/>
       <LatestNewsSection />
       <Footer />
     </div>
