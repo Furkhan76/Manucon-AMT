@@ -7,7 +7,7 @@
 .news-heading {
     text-align: center; /* Center align the main heading */
     font-size: 28px; /* Adjust size as needed */
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .news-container {
@@ -25,7 +25,7 @@
     max-width: 80%; /* Make images a bit smaller (adjust the percentage as needed) */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Center the image */
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0px auto; /* Center the image horizontally */
     border: 2px solid #e0e0e0; /* Light border around the image */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Fancy shadow effect */
@@ -40,7 +40,7 @@
     color: black; /* Text color for the date */
     font-weight: normal; /* Normal text weight */
     font-size: 14px; /* Smaller font size for the date */
-    margin: 10px 0; /* Margin above and below the date */
+    margin: 30px 0; /* Margin above and below the date */
 }
 
 .news-title {

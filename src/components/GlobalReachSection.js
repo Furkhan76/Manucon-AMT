@@ -8,6 +8,7 @@ const GlobalReachSection = () => {
     return (
         <div className="global-reach-section">
             <div className="text-section">
+            <h2 className="Globalreach-heading">Global Reach</h2>
                 <p>
                     American Tower operates a vast portfolio of telecom towers across 25+ countries, supporting
                     connectivity worldwide. Its infrastructure spans the Americas, Europe, Africa, and Asia.

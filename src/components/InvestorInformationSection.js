@@ -8,21 +8,21 @@ import image3 from '../assets/investorImage3.jpg';
 const InvestorInformationSection = () => {
     return (
         <div className="investor-information-section">
+            <div className="right-section">
+                <div className="para-section">
+                    <h2 className="responsibility-heading">Information For Investors</h2>
+                        <p>
+                            American Tower operates a vast portfolio of telecom towers across 25+ countries, supporting
+                            connectivity worldwide. Its infrastructure spans the Americas, Europe, Africa, and Asia.
+                            The company enables seamless communications in diverse regions. With a strong global presence,
+                            American Tower is key to advancing digital networks.
+                        </p>
+                </div>
+            </div>
             <div className="center-section">
                 <img src={image1} alt="Image 1" className="image image1" />
                 <img src={image2} alt="Image 2" className="image image2" />
                 <img src={image3} alt="Image 3" className="image image3" />
-            </div>
-            <div className="right-section">
-            <h2 className="responsibility-heading">Information For Investors</h2>
-                <p>
-                    American Tower Corporation (AMT) is a global leader in communications infrastructure, owning over
-                    225,000 wireless and broadcast sites across more than 25 countries. It generates stable revenue through
-                    long-term leases with telecom carriers, supporting the growing demand for mobile data and 5G expansion.
-                    With its focus on sustainability, American Tower integrates renewable energy solutions, aiming to reduce
-                    its carbon footprint while delivering resilient infrastructure. These initiatives, combined with
-                    consistent dividends, make AMT an attractive option for income-focused investors.
-                </p>
             </div>
         </div>
     );

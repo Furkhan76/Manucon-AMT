@@ -1,15 +1,99 @@
 /* src/components/Footer.css */
-footer {
+
+.footer {
     display: flex;
     justify-content: space-between;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     padding: 20px;
-    background-color: #f0f0f0;
+    text-align: center;
 }
 
-.contact-info, .social-links, .newsletter {
+.footer-section {
     flex: 1;
+    padding: 0 10px;
 }
 
-.social-links a, .newsletter button {
-    margin-right: 10px;
+/* Contact Info Section */
+.contact-info h4 {
+    font-size: 1.5em; /* Increase font size */
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1em; /* Adjust font size as needed */
+    margin: 12px 0; /* Increase line spacing between address lines */
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 120px; /* Increase logo size */
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 28px; /* Increase icon size */
+    height: 28px;
+    filter: brightness(0) invert(1); /* Make icons white */
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Newsletter Section */
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-input {
+    width: 60%; /* Adjust width to fit nicely in one line */
+    padding: 8px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px; /* Rounded corners */
+    outline: none;
+    text-align: center;
+    margin-right: 10px; /* Add more space between input and button */
+}
+
+.email-input::placeholder {
+    color: #aaa;
+}
+
+.subscribe-button {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: red; /* Red background on hover */
+    color: #fff;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 8px;
 }
