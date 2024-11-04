@@ -17,7 +17,8 @@ const Footer = () => {
     const validateEmail = () => {
         const emailPattern = /^[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com|outlook\.com)$/; // Accepts @gmail.com, @yahoo.com, and @outlook.com
         if (!emailPattern.test(email)) {
-            setError("Please enter a valid email (only @gmail.com, @yahoo.com, or @outlook.com allowed).");
+            setError("");
+            alert("Please enter a valid email (only @gmail.com, @yahoo.com, or @outlook.com allowed).");
         } else {
             setError("");
             alert("Thank you for subscribing!"); // Replace with actual subscribe action

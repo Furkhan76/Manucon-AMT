@@ -1,62 +1,53 @@
 /* src/components/ServicesSection.css */
-.services-section {
+
+/* Existing styles... */
+
+.chatbot-icon {
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 600px; /* Set the desired height for the image */
-    background-color: #fff;
-    overflow: hidden;
-    position: relative;
+    justify-content: center;
 }
 
-.service-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease-in-out, transform 4s ease-in-out;
-    opacity: 1;
+.chatbot-icon img {
+    width: 100px;
+    height: 100px;
+    border-radius: 99.9%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.fade-out {
-    opacity: 0;
-    transform: scale(1);
+.chatbot-icon img:hover {
+    transform: scale(1.1);
 }
 
-.fade-in {
-    opacity: 1;
-    animation: zoomIn 2s ease-in-out;
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.05);
-    }
-}
-
-.text-overlay {
+.welcome-message {
     position: absolute;
-    top: 100px;
-    left: 100px;
-    text-align: left;
+    bottom: 80px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    background-color: #0073e6;
     color: #ffffff;
-    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
-.text-overlay h2 {
-    font-weight: bold;
-    font-size: 2.9rem;
-    line-height: 1.4;
-    color: #ffffff;
-    margin: 0 0 10px;
-}
-
-.text-overlay p {
-    font-size: 1.0rem;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 0;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
