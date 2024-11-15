@@ -22,7 +22,7 @@ const ServicesSection = () => {
                 setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
                 setFade(true);
             }, 300); // Wait for fade out before switching image
-        }, 3000); // Change image every 3 seconds
+        }, 7000); // Change image every 3 seconds
 
         return () => clearInterval(interval);
     }, []);

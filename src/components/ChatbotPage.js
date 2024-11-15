@@ -1,11 +1,33 @@
-// src/components/ChatbotPage.js
-import React from 'react';
+import React, { useState } from 'react';
 import './ChatbotPage.css';
 import logo from '../assets/logo.jpg'; // Replace with actual logo path
 import adminIcon from '../assets/admin_icon.gif';
 import userIcon from '../assets/user_icon.gif';
+import LoginModal from './LoginModal';
+import ChatPage from './ChatPage';
 
 const ChatbotPage = () => {
+    const [showLoginModal, setShowLoginModal] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isGuest, setIsGuest] = useState(false);
+
+    const handleLogin = (username, password) => {
+        if (username === 'admin' && password === 'admin') {
+            setIsLoggedIn(true);
+            setShowLoginModal(false);
+        } else {
+            alert("Invalid credentials");
+        }
+    };
+
+    if (isLoggedIn) {
+        return <ChatPage userType="ATC User" />;
+    }
+
+    if (isGuest) {
+        return <ChatPage userType="Guest" />;
+    }
+
     return (
         <div className="chatbot-page">
             {/* Header Section */}
@@ -24,14 +46,14 @@ const ChatbotPage = () => {
                     <div className="user-box">
                         <img src={adminIcon} alt="Internal User Icon" className="user-icon" />
                         <h3>ATC Internal User</h3>
-                        <button className="user-button">Login with SSO</button>
+                        <button className="user-button" onClick={() => setShowLoginModal(true)}>Login with SSO</button>
                     </div>
 
                     {/* External User Box */}
                     <div className="user-box">
                         <img src={userIcon} alt="External User Icon" className="user-icon" />
                         <h3>End User</h3>
-                        <button className="user-button">Continue as Guest</button>
+                        <button className="user-button" onClick={() => setIsGuest(true)}>Continue as Guest</button>
                     </div>
                 </div>
             </main>
@@ -40,6 +62,9 @@ const ChatbotPage = () => {
             <footer className="chatbot-footer">
                 <p>&copy; 2024 ATC. All rights reserved</p>
             </footer>
+
+            {/* Login Modal */}
+            {showLoginModal && <LoginModal onClose={() => setShowLoginModal(false)} onLogin={handleLogin} />}
         </div>
     );
 };
