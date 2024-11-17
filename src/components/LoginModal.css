@@ -13,10 +13,10 @@
     z-index: 1000;
 }
 
-/* Modal box styling */
+/* Adjust modal width if needed for alignment */
 .login-modal {
     background: #fff;
-    width: 380px;
+    width: 420px; /* Increased width for better layout */
     padding: 0;
     border-radius: 8px;
     overflow: hidden;

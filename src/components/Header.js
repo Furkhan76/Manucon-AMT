@@ -8,10 +8,11 @@ const Header = () => {
         <header>
             <img src={logo} alt="American Tower Corporation" className="logo" />
             <nav>
-                <a href="#Services">Our Services</a>
+                <a href="#services">Our Services</a>
                 <a href="#global">Global Reach</a>
                 <a href="#contact">Contact Us</a>
             </nav>
+
         </header>
     );
 };

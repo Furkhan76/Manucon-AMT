@@ -4,6 +4,7 @@ import './CorporateResponsibilitySection.css';
 import Responsibility from '../assets/responsibility.jpg'
 const CorporateResponsibilitySection = () => {
     return (
+        <section data-scroll data-scroll-speed="2">
         <div className="corporate-responsibility-section">
             <div className="content">
                 <div className="image-container">
@@ -17,6 +18,7 @@ const CorporateResponsibilitySection = () => {
                 </div>
             </div>
         </div>
+        </section>
     );
 };
  

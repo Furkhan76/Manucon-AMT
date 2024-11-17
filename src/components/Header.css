@@ -30,6 +30,10 @@ nav a {
 
 nav a:hover {
     background-color: #ffd700; /* Light gold color background on hover */
-    color: #800000; /* Change text color to match the header on hover */
     font-weight: bold; /* Makes text bold on hover */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
 }

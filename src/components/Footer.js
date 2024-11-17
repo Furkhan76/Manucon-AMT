@@ -26,6 +26,7 @@ const Footer = () => {
     };
 
     return (
+        <section data-scroll data-scroll-speed="2">
         <footer className="footer">
             <div className="footer-section contact-info">
                 <h4>Contact Us</h4>
@@ -56,6 +57,7 @@ const Footer = () => {
                 {error && <p className="error-message">{error}</p>}
             </div>
         </footer>
+        </section>
     );
 };
 

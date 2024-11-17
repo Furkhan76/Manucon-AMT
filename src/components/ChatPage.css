@@ -4,14 +4,16 @@
     height: 100vh;
 }
 
+/* Header styles */
 .chat-header {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
+/* Messages section */
 .chat-messages {
     flex: 1;
     padding: 20px;
@@ -36,6 +38,7 @@
     align-self: flex-start;
 }
 
+/* Message Input Section */
 .message-input {
     display: flex;
     align-items: center;
@@ -43,18 +46,120 @@
     background-color: #e0e0e0;
 }
 
-.attachment-button,
+.attachment-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    margin-right: 0px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Updated send button */
 .send-button {
+    background-color: #1606f7;
+    color: #fff;
+    margin: 8px;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #645af5;
+}
+
+.logo{
+    padding-right: 20px;
+}
+
+/* Chat messages */
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between messages */
+}
+
+/* Shared message styles */
+.message {
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px 0;
+    max-width: 70%;
+    word-wrap: break-word; /* Wrap text inside the message box */
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Bot message styles */
+.bot {
+    background-color: #f00; /* Red background */
+    align-self: flex-start;
+    color: #fff; /* White text */
+}
+
+/* User message styles */
+.user {
+    background-color: #1606f7; /* Blue background */
+    align-self: flex-end;
+    color: #fff; /* White text */
+}
+
+/* Message Input Section */
+.message-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+    gap: 10px; /* Add spacing between elements */
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: none; /* Prevent resizing of input */
+}
+
+.send-button {
+    background-color: #1606f7;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #645af5;
+}
+
+/* Attachment button */
+.attachment-button {
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-input[type="text"] {
-    flex: 1;
-    padding: 8px;
-    margin: 0 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.attachment-button:hover {
+    color: #333; /* Slight hover effect */
 }
