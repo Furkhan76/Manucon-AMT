@@ -95,7 +95,7 @@
     max-width: 200px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeOut 25s ease forwards; /* Fade out animation */
+    animation: fadeOut 45s ease forwards; /* Fade out animation */
 }
 
 .chatbot-message::after {

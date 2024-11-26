@@ -5,7 +5,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Ensure vertical alignment of items */
-    padding: 10px;
+    padding: 20px;
     background-color: #060606; /* Maroon background */
 }
 
