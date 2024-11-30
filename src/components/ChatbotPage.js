@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ChatbotPage.css';
-import logo from '../assets/logo.jpg'; // Replace with actual logo path
+import logo from '../assets/chat_bot_l.png'; // Replace with actual logo path
 import adminIcon from '../assets/admin_icon.gif';
 import userIcon from '../assets/user_icon.gif';
 import LoginModal from './LoginModal';

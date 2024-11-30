@@ -1,7 +1,7 @@
 // src/components/Header.js
 import React from 'react';
 import './Header.css';
-import logo from '../assets/path_to_logo.jpg';
+import logo from '../assets/logo.png'
 
 const Header = () => {
     return (

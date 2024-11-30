@@ -2,24 +2,23 @@
 
 body {
   margin: 0;
-  font-family:  "Roboto Slab", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .chat-page {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family:  "Roboto Slab", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .chat-header {
-  background-color: #fff;
-  color: #333;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #000; /* Black line for separator */
 }
 
 .header-left {
@@ -29,12 +28,13 @@ body {
 
 .logo {
   height: 50px;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 .header-title {
-  font-size: 1.9rem; /* Increased header font size */
+  font-size: 1.9rem; /* Bold and larger size */
   font-weight: bolder;
+  color: #fff; /* Ensure text is white */
 }
 
 .new-chat-button {
@@ -51,11 +51,9 @@ body {
   background-color: #ff6666;
 }
 
+/* Removed the separator line */
 .separator-line {
-  border: 0;
-  height: 2px;
-  background-color: #000; /* Black line */
-  margin: 0; /* Removed all margins */
+  display: none;
 }
 
 .chat-messages {

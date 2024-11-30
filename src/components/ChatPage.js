@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ChatPage.css';
-import logo from '../assets/chat_logo.jpg';
+import logo from '../assets/chat_page.png';
 import Send from '../assets/send.png';
 
 const ChatPage = ({ userType }) => {
